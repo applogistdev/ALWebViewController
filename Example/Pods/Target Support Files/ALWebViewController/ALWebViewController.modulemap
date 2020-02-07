@@ -1,0 +1,6 @@
+framework module ALWebViewController {
+  umbrella header "ALWebViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

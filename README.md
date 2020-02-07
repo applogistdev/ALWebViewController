@@ -1,6 +1,5 @@
 # ALWebViewController
 
-[![CI Status](https://img.shields.io/travis/Soner Güler/ALWebViewController.svg?style=flat)](https://travis-ci.org/Soner Güler/ALWebViewController)
 [![Version](https://img.shields.io/cocoapods/v/ALWebViewController.svg?style=flat)](https://cocoapods.org/pods/ALWebViewController)
 [![License](https://img.shields.io/cocoapods/l/ALWebViewController.svg?style=flat)](https://cocoapods.org/pods/ALWebViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ALWebViewController.svg?style=flat)](https://cocoapods.org/pods/ALWebViewController)
@@ -23,6 +22,7 @@ pod 'ALWebViewController'
 ## Author
 
 Soner Güler, soner.guler@applogist.com
+Ünal Çelik, unal.celik@applogist.com
 
 ## License
 

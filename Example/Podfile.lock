@@ -1,0 +1,16 @@
+PODS:
+  - ALWebViewController (0.1.0)
+
+DEPENDENCIES:
+  - ALWebViewController (from `../`)
+
+EXTERNAL SOURCES:
+  ALWebViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ALWebViewController: 2b20040d5cc9742ebd45efe5c43d92d232d77401
+
+PODFILE CHECKSUM: dc48cd0dbdaf02eaab8ff29a91b14e49547d902e
+
+COCOAPODS: 1.9.0.beta.3
