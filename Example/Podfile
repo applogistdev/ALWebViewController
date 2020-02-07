@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ALWebViewController_Example' do
+  pod 'ALWebViewController', :path => '../'
+
+  target 'ALWebViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
