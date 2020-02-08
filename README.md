@@ -1,8 +1,9 @@
-# ALWebViewController
+# ALWebViewController 🌐
 
 [![Version](https://img.shields.io/cocoapods/v/ALWebViewController.svg?style=flat)](https://cocoapods.org/pods/ALWebViewController)
 [![License](https://img.shields.io/cocoapods/l/ALWebViewController.svg?style=flat)](https://cocoapods.org/pods/ALWebViewController)
 [![Platform](https://img.shields.io/cocoapods/p/ALWebViewController.svg?style=flat)](https://cocoapods.org/pods/ALWebViewController)
+[![Language](https://img.shields.io/badge/swift-5-orange.svg)](http://swift.org)
 
 
 ## Installation
@@ -37,8 +38,6 @@ navigationController?.pushViewController(webVC, animated: true)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 
 ## Author
