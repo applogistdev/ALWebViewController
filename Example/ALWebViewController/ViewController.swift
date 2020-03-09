@@ -14,7 +14,8 @@ class ViewController: UITableViewController {
     var items: [(title: String, content: ALWebContentType)]?
     
     var html = """
-        <html><body><h1> Title </h1><p> Test Html Text</p></body></html>
+        <html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+        <body><h1> Title </h1><p> Test Html Text</p></body></html>
     """
 
     override func viewDidLoad() {
@@ -42,9 +43,18 @@ class ViewController: UITableViewController {
         }
         
         let webVC = ALWebViewController(content: type)
+        webVC.delegate = self
         navigationController?.pushViewController(webVC, animated: true)
     }
-    
+}
 
+extension ViewController: ALWebViewDelegate {
+    func webView(didStartLoading webVC: ALWebViewController) {
+        debugPrint("Start Loading")
+    }
+    
+    func webView(didFinishLoading webVC: ALWebViewController) {
+        debugPrint("Finish Loading")
+    }
 }
 

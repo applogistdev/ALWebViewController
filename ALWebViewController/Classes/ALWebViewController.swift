@@ -13,9 +13,24 @@ public enum ALWebContentType {
     case html(html: String)
 }
 
-public class ALWebViewController: UIViewController {
+public protocol ALWebViewDelegate: class {
+    func webView(didStartLoading webVC: ALWebViewController)
+    func webView(didFinishLoading webVC: ALWebViewController)
+    func webView(_ webVC: ALWebViewController, didFailWithError error: Error)
+}
+
+public extension ALWebViewDelegate {
+    func webView(didStartLoading webVC: ALWebViewController) {}
+    func webView(didFinishLoading webVC: ALWebViewController) {}
+    func webView(_ webVC: ALWebViewController, didFailWithError error: Error) {}
+}
+
+
+open class ALWebViewController: UIViewController {
     
-    var content: ALWebContentType
+    public var content: ALWebContentType
+    
+    public var delegate: ALWebViewDelegate?
     
     private var url: URL?
     
@@ -23,6 +38,7 @@ public class ALWebViewController: UIViewController {
     
     private lazy var webView: WKWebView = {
         var view = WKWebView()
+        view.navigationDelegate = self
         return view
     }()
     
@@ -32,15 +48,11 @@ public class ALWebViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required public init?(coder: NSCoder) {
+        self.content = .html(html: "")
+        super.init(coder: coder)
     }
     
-    
-    override public func loadView() {
-        super.loadView()
-        view.addSubview(webView)
-    }
     
     override public func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -49,6 +61,11 @@ public class ALWebViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        view.addSubview(webView)
+        load()
+    }
+    
+    public func reload() {
         load()
     }
     
@@ -60,5 +77,23 @@ public class ALWebViewController: UIViewController {
             let request = URLRequest(url: url)
             webView.load(request)
         }
+    }
+}
+
+extension ALWebViewController: WKNavigationDelegate {
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        delegate?.webView(didFinishLoading: self)
+    }
+    
+    public func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        delegate?.webView(didStartLoading: self)
+    }
+    
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        delegate?.webView(self, didFailWithError: error)
+    }
+    
+    public func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        delegate?.webView(self, didFailWithError: error)
     }
 }

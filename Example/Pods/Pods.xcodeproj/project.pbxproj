@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3181261FD7DE735429D7F2FB86FA0290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2F87E3967CACB7DFA14AD2746342BACA /* ALWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D8DFED841CF045E9D4B9C77340FD3E /* ALWebViewController.swift */; };
+		3181261FD7DE735429D7F2FB86FA0290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDDA8BD51DCE9A9E42657A740BA538A /* Foundation.framework */; };
 		5B54AB9CA1491F5664A9F0075E25C30C /* Pods-ALWebViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D062650444EB6932B41C360C9E786171 /* Pods-ALWebViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D7CD5D39BF3703B0FBFE0594CD65AC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDDA8BD51DCE9A9E42657A740BA538A /* Foundation.framework */; };
 		71F3B51B9CCD6BBD70371254682A1910 /* Pods-ALWebViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D90347E174061407223E01B65B32DCDB /* Pods-ALWebViewController_Example-dummy.m */; };
-		83C6AA5423EDCF5D0080B064 /* ALWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C6AA5323EDCF5D0080B064 /* ALWebViewController.swift */; };
-		8F79D4ED8A63DB8E8921A79D864D934D /* ALWebViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFAE902F232F912108618C313D675097 /* ALWebViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0020BC1ADCD0B9ED26B58658B9DB5E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		B8E0C100A4C897F4A9A08A4E7DF3FD05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		85D76C1EE29ACEC2D7FBCF82EB24A418 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70623E6A43818E22A923D7E082A105E3 /* WebKit.framework */; };
+		95A785B5DAF4033A47AEF290A8D41D30 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67DA81A75DBAA54230BA78A263FE61E /* UIKit.framework */; };
+		B8E0C100A4C897F4A9A08A4E7DF3FD05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDDA8BD51DCE9A9E42657A740BA538A /* Foundation.framework */; };
 		BD85A4224E1CEA646071DEF196F878B8 /* Pods-ALWebViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F28BA0864FE6EBC96ABDA5DA9B8A244 /* Pods-ALWebViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE36540EC35512245955914D44A5FB8B /* ALWebViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DFD441C85A677690130D2CD9AC7680 /* ALWebViewController-dummy.m */; };
+		E4D91E5FE6C7FD5AAE89784984F173C3 /* ALWebViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F08781B44DE030304A816B7589EC8A66 /* ALWebViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBAF6CE12E0143D355051E6E26A2CB17 /* ALWebViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205E485B68DD29654357CE7A77A3E95D /* ALWebViewController-dummy.m */; };
 		FCBCCD16BA6E864309479932251B96FE /* Pods-ALWebViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F659C155327D51B018F3CE534B06207 /* Pods-ALWebViewController_Tests-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -37,50 +39,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DFD441C85A677690130D2CD9AC7680 /* ALWebViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALWebViewController-dummy.m"; sourceTree = "<group>"; };
+		01DA06CAFF51DB624B0FA3D65BE1D692 /* ALWebViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ALWebViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		03F331F489733872431DEBC27298795C /* Pods-ALWebViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALWebViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		099FC4D41E935E1361233F870F10B942 /* ALWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		099FC4D41E935E1361233F870F10B942 /* ALWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ALWebViewController.framework; path = ALWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A7EE2AA8DAB3EFC236D02599E8A3961 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1271A59C724605871D1750D725896C14 /* Pods-ALWebViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ALWebViewController_Example.modulemap"; sourceTree = "<group>"; };
 		144AEC2898965FAC3A47337DD067621C /* Pods-ALWebViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALWebViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		205E485B68DD29654357CE7A77A3E95D /* ALWebViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ALWebViewController-dummy.m"; sourceTree = "<group>"; };
+		2C0403967FF83E06E1D015DD9A87CB72 /* ALWebViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALWebViewController-Info.plist"; sourceTree = "<group>"; };
 		2F28BA0864FE6EBC96ABDA5DA9B8A244 /* Pods-ALWebViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALWebViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		392F4B9A1156B91049BB1F37A7F3A75B /* Pods-ALWebViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALWebViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3F68F4F5AA1F2EAA9D3E5B2D3183B355 /* Pods_ALWebViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALWebViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F68F4F5AA1F2EAA9D3E5B2D3183B355 /* Pods_ALWebViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ALWebViewController_Example.framework; path = "Pods-ALWebViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4969B2C915D041D4016EDD3E1F01923A /* Pods-ALWebViewController_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALWebViewController_Tests-Info.plist"; sourceTree = "<group>"; };
-		570B7E06A2E80FB654F17501AEAF2B12 /* ALWebViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALWebViewController.release.xcconfig; sourceTree = "<group>"; };
+		5F38A42FC24E2E184A75727465994E9F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5F659C155327D51B018F3CE534B06207 /* Pods-ALWebViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALWebViewController_Tests-dummy.m"; sourceTree = "<group>"; };
 		6071B5C71B0A8F0DEF49A6D4524990BF /* Pods-ALWebViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ALWebViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		61786D9E89D57AA32DC0C4C082AA84DD /* ALWebViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALWebViewController-prefix.pch"; sourceTree = "<group>"; };
-		68140A8B19D5DD2B538456D4909D89BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6186E6DE9166655044229B3B17C95815 /* ALWebViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALWebViewController.release.xcconfig; sourceTree = "<group>"; };
+		69D8DFED841CF045E9D4B9C77340FD3E /* ALWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ALWebViewController.swift; path = ALWebViewController/Classes/ALWebViewController.swift; sourceTree = "<group>"; };
+		70623E6A43818E22A923D7E082A105E3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		7FECF69EB6F7D49916ED6F9F2B1FAAE4 /* Pods-ALWebViewController_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ALWebViewController_Example-Info.plist"; sourceTree = "<group>"; };
-		83C6AA5323EDCF5D0080B064 /* ALWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ALWebViewController.swift; path = ALWebViewController/Classes/ALWebViewController.swift; sourceTree = "<group>"; };
 		9B4507400E551062DA42F8818141FAC6 /* Pods-ALWebViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ALWebViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A38AB1157BCCC848CEAA76E1FF296CDF /* ALWebViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ALWebViewController-Info.plist"; sourceTree = "<group>"; };
-		A909B2EC1CA59CADA31C2449C3CBA760 /* ALWebViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALWebViewController.modulemap; sourceTree = "<group>"; };
-		AF0E42F34459D652BB4E95C2E09E43BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B05143A9B5E032AA729CA1C9FC212987 /* Pods-ALWebViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALWebViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2C7C2E85343EFDB8E570F9393FD4137 /* Pods-ALWebViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALWebViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B49EDF492950E654443FA832BB9B26A5 /* ALWebViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALWebViewController.debug.xcconfig; sourceTree = "<group>"; };
 		C4F862B682E76D9A204BB78DE6EE1F1E /* Pods-ALWebViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALWebViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CFF06A62D3EFBCB69E0715074FB7E262 /* ALWebViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ALWebViewController.debug.xcconfig; sourceTree = "<group>"; };
 		D062650444EB6932B41C360C9E786171 /* Pods-ALWebViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ALWebViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		D8AB2D190C2A0DE12B89FF607ED0F97A /* ALWebViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ALWebViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D4034EA88D4F4C7CFA2AD17B250131CB /* ALWebViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ALWebViewController.modulemap; sourceTree = "<group>"; };
+		D67DA81A75DBAA54230BA78A263FE61E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D90347E174061407223E01B65B32DCDB /* Pods-ALWebViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ALWebViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		DFAE902F232F912108618C313D675097 /* ALWebViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALWebViewController-umbrella.h"; sourceTree = "<group>"; };
+		D940A55207D45B558E29BC7EBE8544A7 /* ALWebViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALWebViewController-prefix.pch"; sourceTree = "<group>"; };
+		DDDDA8BD51DCE9A9E42657A740BA538A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E1977EB681979F57622D219DD1E733A1 /* Pods-ALWebViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ALWebViewController_Tests.modulemap"; sourceTree = "<group>"; };
-		EBB7555FDF67214DEF719EDF531EFA8E /* Pods_ALWebViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALWebViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB7555FDF67214DEF719EDF531EFA8E /* Pods_ALWebViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ALWebViewController_Tests.framework; path = "Pods-ALWebViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC14997A7FC90B06D700652ECD013A9E /* Pods-ALWebViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ALWebViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F08781B44DE030304A816B7589EC8A66 /* ALWebViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ALWebViewController-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		003BF4725446687F1DEA010A435D4F8C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0020BC1ADCD0B9ED26B58658B9DB5E0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1535311C7661A3AA53B1594DC4D7BE4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,41 +93,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AFE7CF98B1C461B6E6B8091EB75FCB47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D7CD5D39BF3703B0FBFE0594CD65AC4 /* Foundation.framework in Frameworks */,
+				95A785B5DAF4033A47AEF290A8D41D30 /* UIKit.framework in Frameworks */,
+				85D76C1EE29ACEC2D7FBCF82EB24A418 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18256374D8F0A828AEE242B961117744 /* ALWebViewController */ = {
+		01E51FDDCE74CEFD3C6FB4939A0E62F1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				83C6AA5323EDCF5D0080B064 /* ALWebViewController.swift */,
-				F9A0CCBA339EF12AFE25B7E33FA72B0A /* Pod */,
-				51F088F383DB2646249B8C459E2B4743 /* Support Files */,
+				DDDDA8BD51DCE9A9E42657A740BA538A /* Foundation.framework */,
+				D67DA81A75DBAA54230BA78A263FE61E /* UIKit.framework */,
+				70623E6A43818E22A923D7E082A105E3 /* WebKit.framework */,
 			);
-			name = ALWebViewController;
-			path = ../..;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E51FDDCE74CEFD3C6FB4939A0E62F1 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		475D8FB1508FDDCBE89E08EE68A80F94 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				18256374D8F0A828AEE242B961117744 /* ALWebViewController */,
+				6C48C10C1F330E294D192FDB9EF53D6B /* ALWebViewController */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		51F088F383DB2646249B8C459E2B4743 /* Support Files */ = {
+		6C48C10C1F330E294D192FDB9EF53D6B /* ALWebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A909B2EC1CA59CADA31C2449C3CBA760 /* ALWebViewController.modulemap */,
-				00DFD441C85A677690130D2CD9AC7680 /* ALWebViewController-dummy.m */,
-				A38AB1157BCCC848CEAA76E1FF296CDF /* ALWebViewController-Info.plist */,
-				61786D9E89D57AA32DC0C4C082AA84DD /* ALWebViewController-prefix.pch */,
-				DFAE902F232F912108618C313D675097 /* ALWebViewController-umbrella.h */,
-				CFF06A62D3EFBCB69E0715074FB7E262 /* ALWebViewController.debug.xcconfig */,
-				570B7E06A2E80FB654F17501AEAF2B12 /* ALWebViewController.release.xcconfig */,
+				69D8DFED841CF045E9D4B9C77340FD3E /* ALWebViewController.swift */,
+				C1F80F4EEE9A593C1A5E691CA3ABBEF8 /* Pod */,
+				B51801BF6365C2526EC33B154A720C98 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ALWebViewController";
+			name = ALWebViewController;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		8A156C42136A6534B8E68A16910A12E2 /* Products */ = {
@@ -170,12 +179,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		B51801BF6365C2526EC33B154A720C98 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				D4034EA88D4F4C7CFA2AD17B250131CB /* ALWebViewController.modulemap */,
+				205E485B68DD29654357CE7A77A3E95D /* ALWebViewController-dummy.m */,
+				2C0403967FF83E06E1D015DD9A87CB72 /* ALWebViewController-Info.plist */,
+				D940A55207D45B558E29BC7EBE8544A7 /* ALWebViewController-prefix.pch */,
+				F08781B44DE030304A816B7589EC8A66 /* ALWebViewController-umbrella.h */,
+				B49EDF492950E654443FA832BB9B26A5 /* ALWebViewController.debug.xcconfig */,
+				6186E6DE9166655044229B3B17C95815 /* ALWebViewController.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ALWebViewController";
+			sourceTree = "<group>";
+		};
+		C1F80F4EEE9A593C1A5E691CA3ABBEF8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				01DA06CAFF51DB624B0FA3D65BE1D692 /* ALWebViewController.podspec */,
+				5F38A42FC24E2E184A75727465994E9F /* LICENSE */,
+				0A7EE2AA8DAB3EFC236D02599E8A3961 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		C8055DB6578F12DCFFF6E0DC1BF6D799 /* Pods-ALWebViewController_Tests */ = {
@@ -199,28 +225,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				475D8FB1508FDDCBE89E08EE68A80F94 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				8A156C42136A6534B8E68A16910A12E2 /* Products */,
 				A665EB85C9F73667297A2DBF73BF19A9 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F9A0CCBA339EF12AFE25B7E33FA72B0A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D8AB2D190C2A0DE12B89FF607ED0F97A /* ALWebViewController.podspec */,
-				68140A8B19D5DD2B538456D4909D89BB /* LICENSE */,
-				AF0E42F34459D652BB4E95C2E09E43BD /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,11 +242,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41D1811154C26179CA0738B7B992CE37 /* Headers */ = {
+		6240B41C85F8A03BB5EB56B74D52AFAB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F79D4ED8A63DB8E8921A79D864D934D /* ALWebViewController-umbrella.h in Headers */,
+				E4D91E5FE6C7FD5AAE89784984F173C3 /* ALWebViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,12 +263,12 @@
 /* Begin PBXNativeTarget section */
 		2AA689016A045DDB0127CBBB1CDF12D8 /* ALWebViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B0762E7E69FAC3C57F900F74058A9C07 /* Build configuration list for PBXNativeTarget "ALWebViewController" */;
+			buildConfigurationList = 02BEA850F8C160821107BC69F89E8B58 /* Build configuration list for PBXNativeTarget "ALWebViewController" */;
 			buildPhases = (
-				41D1811154C26179CA0738B7B992CE37 /* Headers */,
-				BC8903F0EEA92A039A85801EF5843BE1 /* Sources */,
-				003BF4725446687F1DEA010A435D4F8C /* Frameworks */,
-				189AAB5CD7F898BD032AA48C8964F556 /* Resources */,
+				6240B41C85F8A03BB5EB56B74D52AFAB /* Headers */,
+				4EFD5C3001E4599C9B6B53722C442570 /* Sources */,
+				AFE7CF98B1C461B6E6B8091EB75FCB47 /* Frameworks */,
+				6BE58131F5A996DD69CEED1203C3F5B3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -317,11 +325,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					2AA689016A045DDB0127CBBB1CDF12D8 = {
-						LastSwiftMigration = 1130;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -344,7 +347,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		189AAB5CD7F898BD032AA48C8964F556 /* Resources */ = {
+		6BE58131F5A996DD69CEED1203C3F5B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,20 +371,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4EFD5C3001E4599C9B6B53722C442570 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBAF6CE12E0143D355051E6E26A2CB17 /* ALWebViewController-dummy.m in Sources */,
+				2F87E3967CACB7DFA14AD2746342BACA /* ALWebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9BE8C32434CDC9276622D387C52B47B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				71F3B51B9CCD6BBD70371254682A1910 /* Pods-ALWebViewController_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BC8903F0EEA92A039A85801EF5843BE1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83C6AA5423EDCF5D0080B064 /* ALWebViewController.swift in Sources */,
-				DE36540EC35512245955914D44A5FB8B /* ALWebViewController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +448,10 @@
 			};
 			name = Release;
 		};
-		85A47FD87F84103EF5372E9CAA0B47EC /* Debug */ = {
+		145682A0A055B7BBFAE05A40B44D499C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFF06A62D3EFBCB69E0715074FB7E262 /* ALWebViewController.debug.xcconfig */;
+			baseConfigurationReference = 6186E6DE9166655044229B3B17C95815 /* ALWebViewController.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -462,7 +464,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ALWebViewController/ALWebViewController-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ALWebViewController/ALWebViewController-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ALWebViewController/ALWebViewController.modulemap";
 				PRODUCT_MODULE_NAME = ALWebViewController;
@@ -470,8 +472,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68E0FB46BE9E44A7AD1CC779B5CBC13F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B49EDF492950E654443FA832BB9B26A5 /* ALWebViewController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ALWebViewController/ALWebViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ALWebViewController/ALWebViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ALWebViewController/ALWebViewController.modulemap";
+				PRODUCT_MODULE_NAME = ALWebViewController;
+				PRODUCT_NAME = ALWebViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -565,7 +598,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -668,39 +702,6 @@
 			};
 			name = Debug;
 		};
-		CE8CDD6C5D6E16725665C4DCA0D200B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 570B7E06A2E80FB654F17501AEAF2B12 /* ALWebViewController.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ALWebViewController/ALWebViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ALWebViewController/ALWebViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ALWebViewController/ALWebViewController.modulemap";
-				PRODUCT_MODULE_NAME = ALWebViewController;
-				PRODUCT_NAME = ALWebViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		EB0F0A15AB8E6C5B3B1FB96049CD45EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B05143A9B5E032AA729CA1C9FC212987 /* Pods-ALWebViewController_Tests.debug.xcconfig */;
@@ -737,6 +738,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02BEA850F8C160821107BC69F89E8B58 /* Build configuration list for PBXNativeTarget "ALWebViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68E0FB46BE9E44A7AD1CC779B5CBC13F /* Debug */,
+				145682A0A055B7BBFAE05A40B44D499C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -751,15 +761,6 @@
 			buildConfigurations = (
 				EB0F0A15AB8E6C5B3B1FB96049CD45EF /* Debug */,
 				875C962C3415A5BA463E2F1D5D1742DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B0762E7E69FAC3C57F900F74058A9C07 /* Build configuration list for PBXNativeTarget "ALWebViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				85A47FD87F84103EF5372E9CAA0B47EC /* Debug */,
-				CE8CDD6C5D6E16725665C4DCA0D200B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
