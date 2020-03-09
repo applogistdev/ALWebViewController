@@ -59,6 +59,11 @@ open class ALWebViewController: UIViewController {
         webView.frame = view.frame
     }
     
+    open override func updateViewConstraints() {
+        super.updateViewConstraints()
+        webView.frame = view.frame
+    }
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
