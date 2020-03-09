@@ -1,6 +1,0 @@
-framework module Pods_ALWebViewController_Tests {
-  umbrella header "Pods-ALWebViewController_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
