@@ -33,6 +33,19 @@ let htmlType = ALWebContentType.html(html: html
 let webVC = ALWebViewController(content: htmlType)
 navigationController?.pushViewController(webVC, animated: true)
 
+
+// ALWebViewDelegate
+
+extension ViewController: ALWebViewDelegate {
+    func webView(didStartLoading webVC: ALWebViewController) {
+        debugPrint("Start Loading")
+    }
+    
+    func webView(didFinishLoading webVC: ALWebViewController) {
+        debugPrint("Finish Loading")
+    }
+}
+
 ```
 
 
