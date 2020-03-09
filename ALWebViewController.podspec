@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Soner Güler' => 'soner.guler@applogist.com', "Ünal Çelik" => "unal.celik@applogist.com" }
   s.source           = { :git => 'https://github.com/applogistdev/ALWebViewController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/sonifex'
 
   s.ios.deployment_target = '9.3'
 
@@ -36,6 +36,6 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'WebKit'
-  s.swift_version = "4.2"
+  s.swift_version = "5"
   # s.dependency 'AFNetworking', '~> 2.3'
 end
