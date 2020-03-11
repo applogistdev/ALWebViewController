@@ -1,5 +1,5 @@
 PODS:
-  - ALWebViewController (0.2.0)
+  - ALWebViewController (0.2.1)
 
 DEPENDENCIES:
   - ALWebViewController (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ALWebViewController: 3c35afcc3abc48a2e439730854342fbea6261fb2
+  ALWebViewController: 97b9429fd95b8a69413fa11ea455be2e475857fa
 
 PODFILE CHECKSUM: dc48cd0dbdaf02eaab8ff29a91b14e49547d902e
 
