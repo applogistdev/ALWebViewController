@@ -36,7 +36,7 @@ open class ALWebViewController: UIViewController {
     
     private var htmlString: String?
     
-    private lazy var webView: WKWebView = {
+    open lazy var webView: WKWebView = {
         var view = WKWebView()
         view.navigationDelegate = self
         return view
@@ -54,7 +54,7 @@ open class ALWebViewController: UIViewController {
     }
     
     
-    override public func viewWillLayoutSubviews() {
+    open override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         webView.frame = view.frame
     }
@@ -64,13 +64,13 @@ open class ALWebViewController: UIViewController {
         webView.frame = view.frame
     }
     
-    override public func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
         load()
     }
     
-    public func reload() {
+    open func reload() {
         load()
     }
     
