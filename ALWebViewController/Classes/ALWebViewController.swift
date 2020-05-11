@@ -36,6 +36,8 @@ open class ALWebViewController: UIViewController {
     
     private var htmlString: String?
     
+    private var headers: [String: String]?
+    
     open lazy var webView: WKWebView = {
         var view = WKWebView()
         view.navigationDelegate = self
@@ -43,8 +45,9 @@ open class ALWebViewController: UIViewController {
     }()
     
     
-    public init(content: ALWebContentType) {
+    public init(content: ALWebContentType, headers: [String: String]? = nil) {
         self.content = content
+        self.headers = headers
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -77,9 +80,13 @@ open class ALWebViewController: UIViewController {
     private func load() {
         switch content {
         case .html(let html):
+            
             webView.loadHTMLString(html, baseURL: nil)
         case .url(let url):
-            let request = URLRequest(url: url)
+            var request = URLRequest(url: url)
+            headers?.forEach({ (header) in
+                request.setValue(header.value, forHTTPHeaderField: header.key)
+            })
             webView.load(request)
         }
     }
