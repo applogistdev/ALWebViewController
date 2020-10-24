@@ -8,12 +8,20 @@
 
 ## Installation
 
+### CocoaPods
 **ALWebViewController** is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'ALWebViewController'
 ```
+
+### Swift Package Manager
+From Xcode 11, you can use Swift Package Manager to add ALWebViewController to your project.
+
+1. Select File > Swift Packages > Add Package Dependency. Enter https://github.com/applogistdev/ALWebViewController.git in the "Choose Package Repository" dialog.
+2. In the next page, specify the version resolving rule as "Up to Next Major" with "0.2.1" as its earliest version.
+3. After Xcode checking out the source and resolving the version, you can choose the "ALWebViewController" library and add it to your app target.
 
 
 ## Usage
