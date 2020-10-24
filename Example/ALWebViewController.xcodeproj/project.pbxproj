@@ -31,6 +31,7 @@
 		0A080B6A6C0FBBCFC081D9D9 /* Pods-ALWebViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALWebViewController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ALWebViewController_Tests/Pods-ALWebViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		193F08AFD9399EDD96E91D93 /* Pods-ALWebViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALWebViewController_Tests.release.xcconfig"; path = "Target Support Files/Pods-ALWebViewController_Tests/Pods-ALWebViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2248EAD09D97F43D8F09C70F /* Pods-ALWebViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALWebViewController_Example.release.xcconfig"; path = "Target Support Files/Pods-ALWebViewController_Example/Pods-ALWebViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3598C6CD2543AC47001F0D05 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		4A8F47FCADBD58A293A0D5F9 /* Pods_ALWebViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALWebViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ALWebViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALWebViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				CDB41F1030520DC43C3B8473 /* ALWebViewController.podspec */,
 				9CDB48955C341E40189DA193 /* README.md */,
 				F2D77BCC41881ABC8646CD30 /* LICENSE */,
+				3598C6CD2543AC47001F0D05 /* Package.swift */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
