@@ -56,20 +56,15 @@ open class ALWebViewController: UIViewController {
         super.init(coder: coder)
     }
     
-    
-    open override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        webView.frame = view.frame
-    }
-    
-    open override func updateViewConstraints() {
-        super.updateViewConstraints()
-        webView.frame = view.frame
-    }
-    
     open override func viewDidLoad() {
         super.viewDidLoad()
+        webView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(webView)
+        webView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        webView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        webView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        webView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        webView.sizeToFit()
         load()
     }
     
