@@ -38,6 +38,12 @@ open class ALWebViewController: UIViewController {
     
     private var headers: [String: String]?
     
+    private var leftBarButtonItems: [UIBarButtonItem]?
+    
+    private var rightBarButtonItems: [UIBarButtonItem]?
+    
+    public var barButtonItemTapHandler: ((_ buttonTag: Int) -> Void)?
+    
     open lazy var webView: WKWebView = {
         var view = WKWebView()
         view.navigationDelegate = self
@@ -45,9 +51,15 @@ open class ALWebViewController: UIViewController {
     }()
     
     
-    public init(content: ALWebContentType, headers: [String: String]? = nil) {
+    public init(content: ALWebContentType,
+                headers: [String: String]? = nil,
+                leftBarButtonItems: [UIBarButtonItem]? = nil,
+                rightBarButtonItems: [UIBarButtonItem]? = nil) {
+        
         self.content = content
         self.headers = headers
+        self.leftBarButtonItems = leftBarButtonItems
+        self.rightBarButtonItems = rightBarButtonItems
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -68,6 +80,15 @@ open class ALWebViewController: UIViewController {
         load()
     }
     
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.setLeftBarButtonItems(leftBarButtonItems, animated: animated)
+        navigationItem.setRightBarButtonItems(rightBarButtonItems, animated: animated)
+        
+        addTapHandlerToBarItems(items: leftBarButtonItems)
+        addTapHandlerToBarItems(items: rightBarButtonItems)
+    }
+    
     open func reload() {
         load()
     }
@@ -84,6 +105,17 @@ open class ALWebViewController: UIViewController {
             })
             webView.load(request)
         }
+    }
+    
+    private func addTapHandlerToBarItems(items: [UIBarButtonItem]?) {
+        items?.forEach({ (item) in
+            item.target = self
+            item.action = #selector(barItemTapped(item:))
+        })
+    }
+    
+    @objc private func barItemTapped(item: UIBarButtonItem) {
+        barButtonItemTapHandler?(item.tag)
     }
 }
 

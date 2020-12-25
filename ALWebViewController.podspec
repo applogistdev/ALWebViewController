@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ALWebViewController'
-  s.version          = '0.2.1'
+  s.version          = '0.3.0'
   s.summary          = 'Simple and Ready to Use WebViewController'
 
 # This description is used to generate tags and improve search results.
